@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Cost</title>
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -2;
+            filter: blur(3px);
+            
+            
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+    </style>
+
+
+
+</head>
+<body>
+    
+    <video src="videos/Fundo.mp4" autoplay muted loop ></video>    
+
+    <div class="overlay"></div>
+
+
+    <div class="central">
+        <div class="titulo">
+            <h1>Travel Cost</h1>
+        </div>
+        <div class="centraldois">
+
+            <div>
+                <span>Distancia</span>
+                <input type="text" id="distancia">
+            </div>
+            <div>
+                <span>Consumo</span>
+                <input type="text"  id="consumo">
+            </div>
+            <div>
+                <span>Valor do Combustivel</span>
+                <input type="text" id="preco">
+            </div>
+
+            <button id="botao">Calcular</button>
+            <p id="resultado"></p>
+
+        </div>    
+    </div>
+
+
+<script src="js/teste.js"></script>
+</body>
+</html>
